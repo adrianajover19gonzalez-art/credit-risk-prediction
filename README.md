@@ -1,122 +1,44 @@
-# Credit Risk Prediction using Machine Learning
+# 🏦 Credit Risk Prediction using Machine Learning
 
-## 📌 Project Overview
-
-This project develops a complete Machine Learning pipeline to predict credit default risk using the **Default of Credit Card Clients** dataset.
-
-The objective is to compare several supervised learning algorithms and determine which one provides the best balance between predictive performance and financial cost.
-
-The project follows the complete Data Science workflow:
-
-- Data understanding
-- Exploratory Data Analysis (EDA)
-- Data preprocessing
-- Feature engineering
-- Model training
-- Hyperparameter tuning
-- Model evaluation
-- Model comparison
-- Business interpretation
+### Predicción del riesgo de impago mediante técnicas de Machine Learning
 
 ---
 
-## 🎯 Objectives
+## 📖 Descripción
 
-The main objectives are:
+La evaluación del riesgo de crédito constituye uno de los problemas más importantes dentro del sector financiero. Una estimación incorrecta del riesgo de impago puede generar importantes pérdidas económicas, afectar a la rentabilidad de una entidad financiera y comprometer la calidad de su cartera de clientes.
 
-- Predict whether a client will default.
-- Compare different Machine Learning models.
-- Analyse customer segments.
-- Evaluate models using statistical and business metrics.
-- Select the best model considering financial impact.
+En este proyecto se desarrolla un flujo completo de Ciencia de Datos para construir un modelo capaz de predecir la probabilidad de impago de un cliente utilizando técnicas de Machine Learning. Para ello se comparan distintos algoritmos supervisados, evaluando tanto su capacidad predictiva como el impacto financiero asociado a los errores de clasificación.
+
+El desarrollo del proyecto sigue una metodología reproducible basada en buenas prácticas de programación, organización del código y documentación técnica, con el objetivo de servir como ejemplo de un proyecto profesional de Ciencia de Datos.
 
 ---
 
-## 📊 Dataset
+## 🏦 Problema de negocio
 
-Dataset:
+Las entidades financieras procesan diariamente miles de solicitudes de crédito. Antes de conceder un préstamo necesitan estimar el riesgo asociado a cada cliente para minimizar posibles pérdidas económicas derivadas de futuros impagos.
 
-**Default of Credit Card Clients**
+Aceptar clientes con una elevada probabilidad de incumplimiento puede generar pérdidas significativas, mientras que rechazar clientes solventes supone desaprovechar oportunidades de negocio.
 
-- Approximately 30,000 observations
-- Financial and demographic variables
-- Binary target:
-    - Default
-    - No Default
+Por ello, disponer de modelos predictivos precisos constituye una herramienta fundamental para apoyar la toma de decisiones en departamentos de riesgos, banca y análisis financiero.
 
 ---
 
-## 🛠 Technologies
+## 🎯 Objetivos
 
-- Python
-- Pandas
-- NumPy
-- Matplotlib
-- Scikit-Learn
-- Jupyter Notebook
+### Objetivo general
 
----
+Desarrollar un modelo predictivo basado en técnicas de Machine Learning capaz de estimar la probabilidad de impago de un cliente a partir de información financiera y demográfica.
 
-## 📂 Project Structure
+### Objetivos específicos
 
-```
-
-credit-risk-prediction/
-
-├── data
-│ ├── raw
-│ └── processed
-│
-├── notebooks
-│
-├── src
-│
-├── images
-│
-├── results
-│
-├── README.md
-├── requirements.txt
-└── LICENSE
-
-```
+- Comprender la estructura del conjunto de datos.
+- Realizar un análisis exploratorio de las variables.
+- Detectar posibles problemas de calidad de los datos.
+- Preparar el conjunto de datos para el entrenamiento de modelos.
+- Comparar distintos algoritmos de clasificación.
+- Ajustar los hiperparámetros mediante validación cruzada.
+- Evaluar el rendimiento utilizando métricas estadísticas y métricas de negocio.
+- Seleccionar el modelo con mejor equilibrio entre capacidad predictiva e impacto financiero.
 
 ---
-
-## 🚀 Models
-
-The following models will be implemented:
-
-- Logistic Regression
-- Ridge / Lasso (GLMNET equivalent)
-- Decision Tree
-- Random Forest
-- Random Forest + SMOTE
-- Gradient Boosting
-
----
-
-## 📈 Evaluation Metrics
-
-Models are compared using:
-
-- Accuracy
-- Balanced Accuracy
-- Precision
-- Recall
-- F1 Score
-- ROC AUC
-- Brier Score
-- Financial Cost Function
-
----
-
-## 👩‍💻 Author
-
-Adriana Jover González
-
-Graduate in Mathematics
-
-Master in Data Science and Computational Mathematics
-
-University of Almería
