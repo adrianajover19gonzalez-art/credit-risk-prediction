@@ -42,3 +42,16 @@ Desarrollar un modelo predictivo basado en técnicas de Machine Learning capaz d
 - Seleccionar el modelo con mejor equilibrio entre capacidad predictiva e impacto financiero.
 
 ---
+
+## 📑 Índice
+
+- [Descripción](#-descripción)
+- [Problema de negocio](#-problema-de-negocio)
+- [Objetivos](#-objetivos)
+- [Conjunto de datos](#-conjunto-de-datos)
+- [Metodología](#-metodología)
+- [Tecnologías](#-tecnologías-utilizadas)
+- [Estructura del proyecto](#-estructura-del-proyecto)
+- [Modelos implementados](#-modelos-implementados)
+- [Resultados](#-resultados)
+- [Trabajo futuro](#-trabajo-futuro)
