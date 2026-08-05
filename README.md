@@ -2,118 +2,134 @@
 
 > End-to-end Machine Learning project for predicting credit default risk using Python and Scikit-learn.
 
+🌐 **Language**
+
+- 🇬🇧 English (this document)
+- 🇪🇸 [Versión en español](README.md)
+
+---
+
+> Proyecto integral de Machine Learning para la predicción del riesgo de impago utilizando Python y Scikit-Learn.
+
 ![Python](https://img.shields.io/badge/Python-3.12-blue)
 ![Scikit-Learn](https://img.shields.io/badge/scikit--learn-Latest-orange)
-![Status](https://img.shields.io/badge/Status-In%20Development-yellow)
-![License](https://img.shields.io/badge/License-MIT-green)
+![Estado](https://img.shields.io/badge/Estado-En%20desarrollo-yellow)
+![Licencia](https://img.shields.io/badge/Licencia-MIT-green)
 
 ---
 
-# 📑 Table of Contents
+# 📑 Índice
 
-- [Project Overview](#-project-overview)
-- [Business Problem](#-business-problem)
-- [Objectives](#-objectives)
-- [Dataset](#-dataset)
-- [Methodology](#-methodology)
-- [Repository Structure](#-repository-structure)
-- [Technologies](#-technologies)
-- [Machine Learning Models](#-machine-learning-models)
-- [Evaluation Metrics](#-evaluation-metrics)
-- [Project Workflow](#-project-workflow)
-- [Installation](#-installation)
-- [Roadmap](#-roadmap)
-- [Author](#-author)
-- [License](#-license)
-
----
-
-# 📖 Project Overview
-
-Credit risk assessment is one of the most important challenges in the financial industry. Financial institutions must decide every day whether to approve or reject thousands of credit applications. An incorrect decision may lead to significant financial losses or missed business opportunities.
-
-This project develops a complete Machine Learning pipeline to estimate the probability of customer default using demographic and financial information.
-
-The objective is not only to build predictive models, but also to demonstrate professional Data Science practices, including reproducible workflows, modular code, model comparison and technical documentation.
+- [Descripción del proyecto](#-descripción-del-proyecto)
+- [Problema de negocio](#-problema-de-negocio)
+- [Objetivos](#-objetivos)
+- [Conjunto de datos](#-conjunto-de-datos)
+- [Metodología](#-metodología)
+- [Estructura del repositorio](#-estructura-del-repositorio)
+- [Tecnologías utilizadas](#-tecnologías-utilizadas)
+- [Modelos de Machine Learning](#-modelos-de-machine-learning)
+- [Métricas de evaluación](#-métricas-de-evaluación)
+- [Flujo del proyecto](#-flujo-del-proyecto)
+- [Instalación](#-instalación)
+- [Hoja de ruta](#-hoja-de-ruta)
+- [Autora](#-autora)
+- [Licencia](#-licencia)
 
 ---
 
-# 🏦 Business Problem
+# 📖 Descripción del proyecto
 
-Granting credit to high-risk customers may generate substantial financial losses, while rejecting creditworthy applicants may reduce business opportunities.
+La evaluación del riesgo de crédito constituye uno de los principales desafíos del sector financiero. Cada día, bancos y entidades financieras deben decidir si conceden o no financiación a miles de clientes, asumiendo el riesgo de que algunos de ellos incumplan sus obligaciones de pago.
 
-The objective of this project is to support credit risk analysts by providing predictive models capable of estimating the probability of default before a loan is approved.
+Este proyecto desarrolla un flujo completo de Ciencia de Datos para construir un modelo capaz de estimar la probabilidad de impago de un cliente utilizando técnicas de Machine Learning.
 
-Several Machine Learning algorithms are compared in order to identify the model offering the best balance between predictive performance, interpretability and financial impact.
+Para ello se comparan distintos algoritmos de clasificación, evaluando tanto su capacidad predictiva como el impacto financiero asociado a los errores de clasificación.
 
----
-
-# 🎯 Objectives
-
-## General Objective
-
-Develop a Machine Learning model capable of predicting customer default risk.
-
-## Specific Objectives
-
-- Understand the business problem.
-- Explore and understand the dataset.
-- Clean and preprocess the data.
-- Perform feature engineering.
-- Compare multiple Machine Learning algorithms.
-- Optimize model hyperparameters.
-- Evaluate models using statistical and business metrics.
-- Select the best-performing model.
-- Interpret the results from a business perspective.
+Además del desarrollo de modelos predictivos, el proyecto pone especial énfasis en la organización del código, la reproducibilidad de los experimentos y la documentación técnica, siguiendo buenas prácticas utilizadas en proyectos profesionales de Ciencia de Datos.
 
 ---
 
-# 📊 Dataset
+# 🏦 Problema de negocio
 
-**Dataset:** Default of Credit Card Clients
+Las entidades financieras procesan diariamente miles de solicitudes de crédito.
 
-Main characteristics:
+Conceder financiación a clientes con una elevada probabilidad de impago puede generar importantes pérdidas económicas, mientras que rechazar clientes solventes supone desaprovechar oportunidades de negocio.
 
-- Around 30,000 observations.
-- Financial and demographic variables.
-- Binary target variable:
-  - Default
-  - No Default
+En este contexto, disponer de modelos predictivos precisos permite apoyar la toma de decisiones en departamentos de riesgos, banca y análisis financiero.
+
+Este proyecto desarrolla diferentes modelos de Machine Learning con el objetivo de estimar la probabilidad de impago antes de conceder un crédito.
 
 ---
 
-# 🔄 Methodology
+# 🎯 Objetivos
 
-The project follows the **CRISP-DM** methodology.
+## Objetivo general
+
+Desarrollar un modelo de Machine Learning capaz de predecir el riesgo de impago de clientes a partir de información financiera y demográfica.
+
+## Objetivos específicos
+
+- Comprender el problema de negocio.
+- Analizar el conjunto de datos.
+- Realizar un análisis exploratorio (EDA).
+- Preparar y transformar los datos.
+- Desarrollar variables predictivas cuando sea necesario.
+- Comparar diferentes algoritmos de clasificación.
+- Optimizar los hiperparámetros de cada modelo.
+- Evaluar el rendimiento mediante métricas estadísticas y de negocio.
+- Seleccionar el modelo con mejor equilibrio entre rendimiento e impacto financiero.
+- Interpretar los resultados obtenidos.
+
+---
+
+# 📊 Conjunto de datos
+
+**Base de datos utilizada**
+
+Default of Credit Card Clients
+
+**Características principales**
+
+- Aproximadamente 30.000 observaciones.
+- Variables financieras y demográficas.
+- Variable objetivo binaria:
+  - Impago
+  - No impago
+
+---
+
+# 🔄 Metodología
+
+El proyecto sigue la metodología **CRISP-DM (Cross Industry Standard Process for Data Mining)**, ampliamente utilizada en proyectos de Ciencia de Datos.
 
 ```text
-Business Understanding
+Comprensión del negocio
         │
         ▼
-Data Understanding
+Comprensión de los datos
         │
         ▼
-Data Preparation
+Preparación de los datos
         │
         ▼
-Exploratory Data Analysis
+Análisis Exploratorio (EDA)
         │
         ▼
-Feature Engineering
+Ingeniería de variables
         │
         ▼
-Model Training
+Entrenamiento de modelos
         │
         ▼
-Model Evaluation
+Evaluación
         │
         ▼
-Business Conclusions
+Conclusiones de negocio
 ```
 
 ---
 
-# 📂 Repository Structure
+# 📂 Estructura del repositorio
 
 ```text
 credit-risk-prediction/
@@ -146,22 +162,20 @@ credit-risk-prediction/
 
 ---
 
-# 🛠 Technologies
+# 🛠 Tecnologías utilizadas
 
-Programming Languages
+### Lenguaje
 
 - Python
 
-Libraries
+### Librerías
 
 - Pandas
 - NumPy
 - Scikit-Learn
 - Matplotlib
-- Seaborn
-- XGBoost (future version)
 
-Development Tools
+### Herramientas
 
 - Git
 - GitHub
@@ -170,24 +184,24 @@ Development Tools
 
 ---
 
-# 🤖 Machine Learning Models
+# 🤖 Modelos de Machine Learning
 
-The following algorithms will be evaluated:
+Durante el proyecto se compararán los siguientes algoritmos:
 
-| Model | Purpose |
-|--------|----------|
-| Logistic Regression | Baseline interpretable model |
-| Ridge / Lasso | Regularized linear models |
-| Decision Tree | Rule-based classification |
-| Random Forest | Ensemble learning |
-| Random Forest + SMOTE | Imbalanced classification |
-| Gradient Boosting | High-performance ensemble model |
+| Modelo | Objetivo |
+|---------|----------|
+| Regresión Logística | Modelo base e interpretable |
+| Ridge / Lasso | Regularización |
+| Árbol de decisión | Clasificación basada en reglas |
+| Random Forest | Modelo ensemble |
+| Random Forest + SMOTE | Tratamiento del desbalanceo |
+| Gradient Boosting | Modelo de alto rendimiento |
 
 ---
 
-# 📈 Evaluation Metrics
+# 📈 Métricas de evaluación
 
-The models will be compared using:
+Los modelos serán comparados mediante:
 
 - Accuracy
 - Balanced Accuracy
@@ -196,51 +210,51 @@ The models will be compared using:
 - F1-Score
 - ROC-AUC
 - Brier Score
-- Financial Cost Function
+- Función de coste financiero
 
 ---
 
-# 🔄 Project Workflow
+# 🔄 Flujo del proyecto
 
 ```text
-Business Problem
-      │
-      ▼
-Dataset
-      │
-      ▼
-Exploratory Data Analysis
-      │
-      ▼
-Data Preprocessing
-      │
-      ▼
-Feature Engineering
-      │
-      ▼
-Model Training
-      │
-      ▼
-Hyperparameter Tuning
-      │
-      ▼
-Model Evaluation
-      │
-      ▼
-Business Conclusions
+Problema de negocio
+        │
+        ▼
+Obtención de datos
+        │
+        ▼
+Análisis Exploratorio
+        │
+        ▼
+Preprocesamiento
+        │
+        ▼
+Ingeniería de variables
+        │
+        ▼
+Entrenamiento de modelos
+        │
+        ▼
+Optimización
+        │
+        ▼
+Evaluación
+        │
+        ▼
+Conclusiones
 ```
 
 ---
 
-# ⚙️ Installation
+# ⚙️ Instalación
 
-Clone the repository
+Clonar el repositorio
 
 ```bash
-git clone https://github.com/yourusername/credit-risk-prediction.git
+git clone https://github.com/TU_USUARIO/credit-risk-prediction.git
 ```
 
-Install dependencies
+Instalar las dependencias
 
 ```bash
 pip install -r requirements.txt
@@ -248,31 +262,32 @@ pip install -r requirements.txt
 
 ---
 
-# 🗺️ Roadmap
+# 🗺️ Hoja de ruta
 
-- [x] Repository creation
-- [x] Project structure
-- [ ] Exploratory Data Analysis
-- [ ] Data preprocessing
-- [ ] Feature engineering
-- [ ] Model training
-- [ ] Hyperparameter tuning
-- [ ] Model evaluation
-- [ ] Documentation
-- [ ] Final report
+- [x] Creación del repositorio
+- [x] Organización de la estructura del proyecto
+- [x] Documentación inicial
+- [ ] Análisis exploratorio de los datos
+- [ ] Preprocesamiento
+- [ ] Ingeniería de variables
+- [ ] Entrenamiento de modelos
+- [ ] Optimización de hiperparámetros
+- [ ] Comparación de modelos
+- [ ] Interpretación de resultados
+- [ ] Documentación final
 
 ---
 
-# 👩‍💻 Author
+# 👩‍💻 Autora
 
 **Adriana Jover González**
 
-- Graduate in Mathematics
-- Master's Degree in Data Science and Computational Mathematics
-- University of Almería
+- Graduada en Matemáticas
+- Máster en Ciencia de Datos y Matemática Computacional
+- Universidad de Almería
 
 ---
 
-# 📄 License
+# 📄 Licencia
 
-This project is distributed under the MIT License.
+Este proyecto se distribuye bajo la licencia **MIT**.
